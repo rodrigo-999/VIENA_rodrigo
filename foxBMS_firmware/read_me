@@ -1,1 +1,10 @@
-cena
+This is the firmware that is to be compiled and uploaded into the BMS master unit
+
+It is important to know that the .zip file in this folder only contains the embeded software folder (github did not allow to upload the all the files)
+However the only files changed durring this thesis work are the ones contained in this folder
+If you intend to compile and upload this code, please download the foxBMS firmware from https://github.com/foxBMS/foxbms-1 and replace the embeded software folder for the one in this repository
+
+compile and upload instructions are available in:
+https://iisb-foxbms.iisb.fraunhofer.de/foxbms/gen1/docs/html/latest/getting_started/foxconda/foxconda.html
+https://iisb-foxbms.iisb.fraunhofer.de/foxbms/gen1/docs/html/latest/getting_started/build/build.html
+https://iisb-foxbms.iisb.fraunhofer.de/foxbms/gen1/docs/html/latest/getting_started/eclipse_workspace/eclipse_workspace.html
