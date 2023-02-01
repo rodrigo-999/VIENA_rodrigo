@@ -1,1 +1,3 @@
-cena
+this folder contains the code to run on the RPI connected to the foxbms master:
+
+the .py contains the code that comunicates with the BMS via CAN
