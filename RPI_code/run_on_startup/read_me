@@ -14,3 +14,8 @@ In order for the foxbms.py code to run when the rpi is turn on the launcher.sh f
 -it will not run at start up but rather 70 seconds after the RPI turns on
 -this delay is to allow the RPI to boot and connect to a network
 -any errors or logs will be recorder in a text file /home/pi/logs/cronlog
+
+
+links to tutorials 
+https://www.instructables.com/Raspberry-Pi-Launch-Python-script-on-startup/
+https://medium.com/codex/how-to-run-a-python-program-at-startup-on-your-raspberry-pi-d5cc1730d4db
