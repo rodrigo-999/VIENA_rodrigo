@@ -1,1 +1,16 @@
-read me 
+In order for the foxbms.py code to run when the rpi is turn on the launcher.sh file is necesserry. Futhermore the steps bellow are also required
+
+
+-on the RPI terminal type "chmod 755 launcher.sh" to make launcher.sh executalble
+
+-on the RPI terminal type "sudo crontab -e"
+-add the flowing command to the end of the file
+
+
+@reboot sleep 70 && sh /home/pi/launcher.sh >/home/pi/logs/cronlog 2>&1
+
+
+-this command will run the code in file /home/pi/launcher.sh every time the RPI turns on
+-it will not run at start up but rather 70 seconds after the RPI turns on
+-this delay is to allow the RPI to boot and connect to a network
+-any errors or logs will be recorder in a text file /home/pi/logs/cronlog
