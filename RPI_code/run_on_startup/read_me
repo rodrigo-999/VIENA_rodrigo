@@ -1,11 +1,11 @@
-In order for the foxbms.py code to run when the rpi is turn on the launcher.sh file is necesserry. Futhermore the steps bellow are also required
+In order for the foxbms.py code to run when the rpi is turned-on the launcher.sh file is necesserry. Futhermore the steps bellow are also required
 
 
--on the RPI terminal type "chmod 755 launcher.sh" to make launcher.sh executalble
+STEPS:
+1) on the RPI terminal type "chmod 755 launcher.sh" to make launcher.sh executalble
 
--on the RPI terminal type "sudo crontab -e"
--add the flowing command to the end of the file
-
+2) on the RPI terminal type "sudo crontab -e"
+3) add the flowing command to the end of the file
 
 @reboot sleep 70 && sh /home/pi/launcher.sh >/home/pi/logs/cronlog 2>&1
 
@@ -16,6 +16,10 @@ In order for the foxbms.py code to run when the rpi is turn on the launcher.sh f
 -any errors or logs will be recorder in a text file /home/pi/logs/cronlog
 
 
-links to tutorials 
+Links to tutorials:
 https://www.instructables.com/Raspberry-Pi-Launch-Python-script-on-startup/
 https://medium.com/codex/how-to-run-a-python-program-at-startup-on-your-raspberry-pi-d5cc1730d4db
+
+Notes:
+acording to this code and commands the laucher.sh must be inside "/home/pi" and the foxbms.py file must be inside "/home/pi/foxbms_Can/"
+in the laucher.sh file it is important that PYTHONPATH points to the place where the CAN python lybrary is stored
