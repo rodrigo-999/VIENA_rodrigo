@@ -1,3 +1,4 @@
 this folder contains the code to run on the RPI connected to the foxbms master:
 
-the foxbms.py contains the code that comunicates with the BMS via CAN
+the foxbms.py contains the code that communicates with the BMS via CAN
+the run_on_startup folder contains the code to make foxbms.py run every time the RPI is turned on automatically
